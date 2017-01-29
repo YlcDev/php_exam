@@ -1,0 +1,11 @@
+MarchandBundle\Entity\Achat:
+    type: entity
+    table: null
+    repositoryClass: MarchandBundle\Repository\AchatRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }

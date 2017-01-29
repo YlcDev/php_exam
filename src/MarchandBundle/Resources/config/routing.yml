@@ -1,0 +1,15 @@
+marchand_fruit:
+    resource: "@MarchandBundle/Resources/config/routing/fruit.yml"
+    prefix:   /fruit
+
+marchand_homepage:
+    path:     /
+    defaults: { _controller: MarchandBundle:Default:index }
+
+marchand_achat:
+        resource: "@MarchandBundle/Resources/config/routing/achat.yml"
+        prefix:   /achat
+
+marchand_user:
+        resource: "@MarchandBundle/Resources/config/routing/user.yml"
+        prefix:   /user

@@ -1,0 +1,19 @@
+MarchandBundle\Entity\Fruit:
+    type: entity
+    table: null
+    repositoryClass: MarchandBundle\Repository\FruitRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: 255
+        prix:
+            type: float
+        quantite:
+            type: integer
+    lifecycleCallbacks: {  }

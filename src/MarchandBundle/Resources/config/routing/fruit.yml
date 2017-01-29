@@ -1,0 +1,24 @@
+fruit_index:
+    path:     /
+    defaults: { _controller: "MarchandBundle:Fruit:index" }
+    methods:  GET
+
+fruit_show:
+    path:     /{id}/show
+    defaults: { _controller: "MarchandBundle:Fruit:show" }
+    methods:  GET
+
+fruit_new:
+    path:     /new
+    defaults: { _controller: "MarchandBundle:Fruit:new" }
+    methods:  [GET, POST]
+
+fruit_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "MarchandBundle:Fruit:edit" }
+    methods:  [GET, POST]
+
+fruit_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "MarchandBundle:Fruit:delete" }
+    methods:  DELETE

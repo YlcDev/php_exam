@@ -1,0 +1,24 @@
+achat_index:
+    path:     /
+    defaults: { _controller: "MarchandBundle:Achat:index" }
+    methods:  GET
+
+achat_show:
+    path:     /{id}/show
+    defaults: { _controller: "MarchandBundle:Achat:show" }
+    methods:  GET
+
+achat_new:
+    path:     /new
+    defaults: { _controller: "MarchandBundle:Achat:new" }
+    methods:  [GET, POST]
+
+achat_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "MarchandBundle:Achat:edit" }
+    methods:  [GET, POST]
+
+achat_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "MarchandBundle:Achat:delete" }
+    methods:  DELETE
