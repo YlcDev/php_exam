@@ -1,7 +1,6 @@
 MarchandBundle\Entity\User:
     type: entity
     table: fos_user
-    repositoryClass: MarchandBundle\Repository\UserRepository
     id:
         id:
             type: integer
@@ -9,3 +8,8 @@ MarchandBundle\Entity\User:
             generator:
                 strategy: AUTO
     lifecycleCallbacks: {  }
+
+
+
+
+

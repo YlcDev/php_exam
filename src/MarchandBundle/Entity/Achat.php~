@@ -24,4 +24,33 @@ class Achat
     {
         return $this->id;
     }
+    /**
+     * @var \MarchandBundle\Entity\User
+     */
+    private $user;
+
+
+    /**
+     * Set user
+     *
+     * @param \MarchandBundle\Entity\User $user
+     *
+     * @return Achat
+     */
+    public function setUser(\MarchandBundle\Entity\User $user = null)
+    {
+        $this->user = $user;
+
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return \MarchandBundle\Entity\User
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
 }

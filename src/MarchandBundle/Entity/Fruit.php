@@ -108,4 +108,50 @@ class Fruit
     {
         return $this->quantite;
     }
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    private $achats;
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->achats = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Add achat
+     *
+     * @param \MarchandBundle\Entity\Achat $achat
+     *
+     * @return Fruit
+     */
+    public function addAchat(\MarchandBundle\Entity\Achat $achat)
+    {
+        $this->achats[] = $achat;
+
+        return $this;
+    }
+
+    /**
+     * Remove achat
+     *
+     * @param \MarchandBundle\Entity\Achat $achat
+     */
+    public function removeAchat(\MarchandBundle\Entity\Achat $achat)
+    {
+        $this->achats->removeElement($achat);
+    }
+
+    /**
+     * Get achats
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getAchats()
+    {
+        return $this->achats;
+    }
 }

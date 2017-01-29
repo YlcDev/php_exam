@@ -3,6 +3,8 @@
 namespace MarchandBundle\Controller;
 
 use MarchandBundle\Entity\Achat;
+use MarchandBundle\Entity\Fruit;
+use MarchandBundle\Entity\User;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 

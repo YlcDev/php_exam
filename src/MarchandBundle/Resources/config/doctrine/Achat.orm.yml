@@ -9,3 +9,15 @@ MarchandBundle\Entity\Achat:
             generator:
                 strategy: AUTO
     lifecycleCallbacks: {  }
+
+
+    manyToOne:
+        user:
+            targetEntity: MarchandBundle\Entity\User
+            inversedBy: achats
+        fruit:
+            targetEntity: MarchandBundle\Entity\User
+            inversedBy: id
+
+
+

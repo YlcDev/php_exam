@@ -17,3 +17,9 @@ MarchandBundle\Entity\Fruit:
         quantite:
             type: integer
     lifecycleCallbacks: {  }
+
+
+    oneToMany:
+        achats:
+            targetEntity: MarchandBundle\Entity\Achat
+            mappedBy: fruit
