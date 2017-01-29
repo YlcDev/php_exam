@@ -1,6 +1,6 @@
 MarchandBundle\Entity\User:
     type: entity
-    table: null
+    table: fos_user
     repositoryClass: MarchandBundle\Repository\UserRepository
     id:
         id:

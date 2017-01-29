@@ -3,22 +3,16 @@
 namespace MarchandBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use FOS\UserBundle\Model\User as BaseUser;
 
 /**
  * User
  */
-class User extends BaseUser
+class User
 {
     /**
      * @var int
      */
-    protected $id;
-    
-    public function __construct()
-    {
-        parent::__construct();
-    }
+    private $id;
 
 
     /**
